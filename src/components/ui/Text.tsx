@@ -30,4 +30,6 @@ const Text = forwardRef<HTMLParagraphElement, textProps>(
   }
 );
 
+Text.displayName = "Text";
+
 export default Text;

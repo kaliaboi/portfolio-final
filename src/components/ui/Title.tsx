@@ -30,4 +30,6 @@ const Title = forwardRef<HTMLHeadingElement, headingProps>(
   }
 );
 
+Title.displayName = "Title";
+
 export default Title;

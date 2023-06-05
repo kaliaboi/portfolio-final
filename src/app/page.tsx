@@ -16,8 +16,8 @@ export default function Home() {
         <div className="work mt-20">
           <Title>Selected Work</Title>
           <div className="work-cards mt-6 grid grid-cols-1 gap-12 lg:grid-cols-2">
-            {projects.map((project) => (
-              <WorkCard project={project} />
+            {projects.map((project, key) => (
+              <WorkCard project={project} key={key} />
             ))}
           </div>
         </div>

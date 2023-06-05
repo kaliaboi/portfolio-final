@@ -1,14 +1,15 @@
 "use client";
 
-import { FC, useEffect, useRef, useState } from "react";
+import { FC, Key, useEffect, useRef, useState } from "react";
 import { Project } from "@/lib/projects";
 import Text from "./ui/Text";
 
 interface WorkCardProps {
   project: Project;
+  key: Key;
 }
 
-const WorkCard: FC<WorkCardProps> = ({ project }) => {
+const WorkCard: FC<WorkCardProps> = ({ project, key }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [topMargin, setTopMargin] = useState<number | undefined>(
     ref.current?.getBoundingClientRect().y
@@ -32,6 +33,7 @@ const WorkCard: FC<WorkCardProps> = ({ project }) => {
   return (
     <div
       ref={ref}
+      key={key}
       className="card flex flex-col cursor-pointer"
       onMouseEnter={() => setActive(true)}
       onMouseLeave={() => setActive(false)}
