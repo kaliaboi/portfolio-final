@@ -1,6 +1,6 @@
 import WorkCard from "@/components/WorkCard";
 import Title from "@/components/ui/Title";
-import Text from "@/components/ui/text";
+import Text from "@/components/ui/Text";
 import { projects } from "@/lib/projects";
 
 export default function Home() {
