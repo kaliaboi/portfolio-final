@@ -1,8 +1,8 @@
 "use client";
 
 import { FC, useEffect, useRef, useState } from "react";
-import Text from "./ui/text";
 import { Project } from "@/lib/projects";
+import Text from "./ui/Text";
 
 interface WorkCardProps {
   project: Project;
